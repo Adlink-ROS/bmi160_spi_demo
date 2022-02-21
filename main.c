@@ -147,8 +147,8 @@ int main(int argc, char argv[]) {
 	while (times_to_read < 50) {
 		/* To read both Accel and Gyro data */
 		rslt = bmi160_get_sensor_data(BMI160_BOTH_ACCEL_AND_GYRO, &bmi160_accel, &bmi160_gyro, &sensor);
-		//rslt = bmi160_get_sensor_data(BMI160_ACCEL_ONLY, &bmi160_accel, NULL, &sensor);// onely Accel data
-		//rslt = bmi160_get_sensor_data(BMI160_ACCEL_ONLY, NULL, &bmi160_gyro, &sensor);// onely Gyro data
+		//rslt = bmi160_get_sensor_data(BMI160_ACCEL_ONLY, &bmi160_accel, NULL, &sensor);// only Accel data
+		//rslt = bmi160_get_sensor_data(BMI160_ACCEL_ONLY, NULL, &bmi160_gyro, &sensor);// only Gyro data
 		
 		if(rslt == BMI160_OK) {
 			printf("OK get data ; ");
