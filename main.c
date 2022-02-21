@@ -126,7 +126,7 @@ int main(int argc, char argv[]) {
 	/*Select the power mode of Gyroscope sensor*/
 	sensor.gyro_cfg.power = BMI160_GYRO_NORMAL_MODE;
 
-    /*Setting the sensor config*/
+	/*Setting the sensor config*/
 	rslt = bmi160_set_sens_conf(&sensor);
 	if (rslt != BMI160_OK) pabort("Setting Sensor Conf Failed");
 
